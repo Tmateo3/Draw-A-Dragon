@@ -1,8 +1,9 @@
 import turtle
 t = turtle.Turtle()
-dragon = True
 
-while dragon == True:
+body = True
+
+while body == True:
     #body
     t.width(5)
     t.forward(100)
@@ -26,7 +27,12 @@ while dragon == True:
 
     t.left(90)
     t.forward(250)
+    
+    body = False
+    
+neckhead = True
 
+while neck/head == True:
     #neck/head
     t.right(90)
     t.forward(50)
@@ -73,7 +79,14 @@ while dragon == True:
 
     t.left(90)
     t.forward(200)
+    
+    neckhead = False
 
+    
+wings = True
+    
+while wings == True:
+    
     #wings
     t.color("purple")
     t.right(90)
@@ -93,6 +106,12 @@ while dragon == True:
     t.left(180)
     t.color("black")
     t.forward(500)
+    
+    wings = False
+    
+tail = True
+
+while tail == True:
 
     #tail
     t.color("orange")
@@ -106,7 +125,14 @@ while dragon == True:
     t.right(90)
     t.forward(10)
     t.left(90)
+    
+    tail = False
 
+    
+legs = True
+
+while legs == True:
+    
     #legs
     t.forward(100)
     t.left(90)
@@ -148,8 +174,10 @@ while dragon == True:
     t.forward(30)
     t.left(90)
     t.forward(70)
+    
+    legs = False
 
-    dragon = False
+
 
 
 
